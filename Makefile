@@ -14,7 +14,7 @@ db-shell:
 	docker compose exec db psql -U hook hookrelay 
 
 api: 
-	go run .cmd/api
+	go run ./cmd/api
 
 fmt: 
 	go fmt ./.. 
