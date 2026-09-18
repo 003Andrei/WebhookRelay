@@ -1,7 +1,7 @@
 .PHONY: db db-down db-reset db-shell api fmt vet
 
 db:
-	docker compose -d db 
+	docker compose up -d db 
 
 db-down: 
 		docker compose down 
