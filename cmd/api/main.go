@@ -9,7 +9,7 @@ import (
 
 func main(){
 	// Read from environment and fall back to port :8080
-	addr := os.Getenv("HHTP_ADDR")
+	addr := os.Getenv("HTTP_ADDR")
 	if addr == "" {
 		addr = ":8080"
 	}
